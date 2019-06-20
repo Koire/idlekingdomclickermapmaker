@@ -1,4 +1,4 @@
-import { app} from "hyperapp"
+import { app } from "hyperapp"
 import RootPage from "./RootPage";
 
 
