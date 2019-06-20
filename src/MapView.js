@@ -2,8 +2,8 @@ import * as Honeycomb from "honeycomb-grid";
 
 const clickedGrid = (state, [x,y]) => ({
         ...state,
-        hexMap: [...state.hexMap.map((row, xIdx) =>
-            row.map((cell, yIdx) => x===xIdx && y === yIdx
+        hexMap: [...state.hexMap.map((row, yIdx) =>
+            row.map((cell, xIdx) => x===xIdx && y === yIdx
                 ? {...cell, color : state.currentColor} : cell))]
 })
 
@@ -31,7 +31,7 @@ export default (state) => {
                 const hex = grid.get([x, y])
                 return hex && <polygon points={corners.map(({x, y}) => `${x + hex.toPoint().x}, ${y + hex.toPoint().y}`)}
                                 style={{stroke: "black", fill: cell.color, transform: "rotateX(40deg)"}}
-                                onClick={[clickedGrid, [hex.x, hex.y]]}/>
+                                onClick={[clickedGrid, [x, y]]}/>
             }))}
         })}
         </svg>
