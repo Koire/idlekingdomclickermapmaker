@@ -1,5 +1,5 @@
 import { app } from "hyperapp"
-import RootPage from "./RootPage";
+import MapView from "./MapView";
 
 
 const devExtension = window.__REDUX_DEVTOOLS_EXTENSION__
@@ -29,8 +29,8 @@ const appSettings = {
         hexMap: generateMap(31),
         currentColor: "pink"
     }),
-    view: RootPage,
+    view: MapView,
     node: document.getElementById("app")
 }
 
-app(appSettings, devMiddleWare)
+process.env.NODE_ENV === "production" ? app(appSettings) : app(appSettings, devMiddleWare)

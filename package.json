@@ -1,21 +1,22 @@
 {
   "name": "idlekingdomclickmap",
   "version": "1.0.0",
-  "description": "",
+  "description": "Map maker for Idle Kingdom Clicker",
   "main": "index.html",
   "scripts": {
+    "start": "parcel ./src/index.html --open",
     "build": "parcel build ./src/index.html --public-url ./",
     "dev": "parcel ./src/index.html --port 8080"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "honeycomb-grid": "^2.0.3",
-    "hyperapp": "^2.0.0-beta.22"
+    "hyperapp": "2.0.0-beta.22",
+    "honeycomb-grid": "^2.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "babel-plugin-jsx-pragmatic": "^1.0.2",
-    "parcel-bundler": "^1.12.3"
+    "babel-plugin-jsx-pragmatic": "*",
+    "parcel-bundler": "1.12.3",
+    "@babel/core": "^7.4.5"
   }
 }
