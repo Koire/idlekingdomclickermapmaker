@@ -5,9 +5,9 @@
   "keywords": ["hyperapp", "honeycomb-grid", "idle kingdom clicker"],
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html --open",
-    "build": "parcel build ./src/index.html --public-url ./",
-    "dev": "parcel ./src/index.html --port 8080"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --public-url ./",
+    "dev": "parcel index.html --port 8080"
   },
   "author": "",
   "license": "ISC",
