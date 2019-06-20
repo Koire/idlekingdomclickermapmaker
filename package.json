@@ -2,7 +2,8 @@
   "name": "idlekingdomclickmap",
   "version": "1.0.0",
   "description": "Map maker for Idle Kingdom Clicker",
-  "main": "index.html",
+  "keywords": ["hyperapp", "honeycomb-grid", "idle kingdom clicker"],
+  "main": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html --open",
     "build": "parcel build ./src/index.html --public-url ./",
